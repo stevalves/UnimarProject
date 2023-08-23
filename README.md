@@ -8,7 +8,6 @@
 ## **Tecnologias e bibliotecas**:
 * React
 * TypeScript
-* react-hook-form
 * react-router-dom
 * tailwindCSS
 * react-icons
