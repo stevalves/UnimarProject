@@ -3,7 +3,7 @@
 </p>
 
 # Projeto Unimar
-### *Nos foi passado um desafio aonde a finalidade era contribuir de alguma forma para a universidade com a criação de um website.*
+#### Nos foi passado um desafio aonde a finalidade era contribuir de alguma forma para a universidade com a criação de um website.
 
 ## **Tecnologias e bibliotecas**:
 * React
