@@ -1,9 +1,7 @@
 import { TbArrowDown } from "react-icons/tb"
 import CoursesList from "../components/CoursesList"
 
-interface iHomepage { }
-
-const Homepage = ({ }: iHomepage) => {
+const Homepage = () => {
   return (
     <>
       <section className="h-screen w-full flex items-center justify-center">
