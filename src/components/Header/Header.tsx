@@ -42,7 +42,7 @@ const Header = () => {
       <div className="container mx-auto flex w-full items-center justify-between p-2">
         <Link to="/">
           <h1 className="text-[1.5rem] tracking-wide md:text-[2rem] text-forest-100">
-            Logo
+            <img src="https://oficial.unimar.br/wp-content/themes/universo-unimar/images/logo.svg" alt="Unimar Logo" className="w-5/6"/>
           </h1>
         </Link>
         <NavBar />

@@ -1,4 +1,5 @@
 import { TbArrowDown } from "react-icons/tb"
+import CoursesList from "../components/CoursesList"
 
 interface iHomepage { }
 
@@ -6,30 +7,22 @@ const Homepage = ({ }: iHomepage) => {
   return (
     <>
       <section className="h-screen w-full flex items-center justify-center">
-        <div className="p-4 md:p-16 flex flex-col items-center justify-center bg-forest-200/20 backdrop-blur-sm rounded">
-          <h1 className="text-4xl font-bold text-center text-forest-50">
-            Lorem ipsum dolor sit amet,<br /> <span className="text-forest-200 underline">consectetur</span> adipiscing elit,
+        <div className="p-4 md:p-16 flex flex-col items-center justify-center bg-forest-200/20 backdrop-blur-xl rounded">
+          <h1 className="text-4xl font-bold text-center text-forest-50 leading-relaxed">
+            Começe acreditando que<br /> <span className="text-forest-200 underline">TUDO</span> é possível!
           </h1>
-          <div className="flex w-full mt-16 px-4 justify-evenly text-forest-50">
-            <button className="border-2 px-4 py-2 rounded border-forest-50 hover:bg-forest-600/50 transition-colors duration-300">Need</button>
-            <button className="border-2 px-4 py-2 rounded border-forest-50 hover:bg-forest-600/50 transition-colors duration-300">Help</button>
+          <div className="flex flex-col gap-4 w-full mt-16 px-4 justify-evenly text-forest-50">
+            <button className="border-2 px-4 py-2 rounded border-forest-50 hover:bg-forest-600/50 transition-colors duration-300">Vamos lá</button>
+            <button className="border-2 px-4 py-2 rounded border-forest-50 hover:bg-forest-600/50 transition-colors duration-300">Quem somos nós?</button>
           </div>
         </div>
         <div className="absolute bottom-12 text-forest-50 text-5xl animate-goDown">
           <TbArrowDown />
         </div>
       </section>
-      <section className="h-[400px] bg-forest-600/90">
-        <div className="container h-full p-2 mx-auto flex gap-2 items-center overflow-x-auto">
-          <div className="w-[360px] min-w-[360px] h-5/6 bg-white"></div>
-          <div className="w-[360px] min-w-[360px] h-5/6 bg-white"></div>
-          <div className="w-[360px] min-w-[360px] h-5/6 bg-white"></div>
-          <div className="w-[360px] min-w-[360px] h-5/6 bg-white"></div>
-          <div className="w-[360px] min-w-[360px] h-5/6 bg-white"></div>
-          <div className="w-[360px] min-w-[360px] h-5/6 bg-white"></div>
-        </div>
-      </section>
+      <CoursesList />
     </>
+
   )
 }
 

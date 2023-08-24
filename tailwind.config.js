@@ -27,6 +27,7 @@ export default {
     },
     animation: {
       goDown: "goDown 2s ease-in-out infinite",
+      modalDown: "modalDown .5s ease-in-out"
     },
     keyframes: {
       goDown: {
@@ -36,6 +37,10 @@ export default {
         "75%": { transform: "translateY(-12px)" },
         "100%": { transform: "translateY(0)" },
       },
+      modalDown: {
+        "0%": { transform: "translateY(-12px)" },
+        "100%": { transform: "translateY(0)" },
+      }
     },
   },
   plugins: [],
