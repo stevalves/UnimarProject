@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://oficial.unimar.br/" target="blank"><img src="https://oficial.unimar.br/wp-content/themes/universo-unimar/images/logo.svg" width="200" alt="Unimar Logo" /></a>
+  <a href="https://oficial.unimar.br/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Unimar.png" width="400" alt="Unimar Logo" /></a>
 </p>
 
 # Projeto Unimar
