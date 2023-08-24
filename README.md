@@ -25,7 +25,7 @@ npm i
 # caso use yarn
 yarn
 
-#caso use pnpm
+# caso use pnpm
 pnpm i
 ```
 
@@ -40,6 +40,6 @@ npm run dev
 # caso use yarn
 yarn dev
 
-#caso use pnpm
+# caso use pnpm
 pnpm run dev
 ```
