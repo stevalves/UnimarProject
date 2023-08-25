@@ -30,6 +30,11 @@
   background: #305040;
 }
 
+/* Add smoth on HTML scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Bg image */
 body {
   background-image: url(assets/bg1.jpg);
@@ -39,3 +44,9 @@ body {
   background-size: cover;
   object-fit: cover;
 }
+
+/* Unimar BG: 
+
+https://oficial.unimar.br/wp-content/uploads/2019/08/bg-01-e1595343957846.jpg
+
+*/
