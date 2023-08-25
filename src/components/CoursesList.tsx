@@ -1,3 +1,7 @@
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import a from "../assets/bg1.jpg";
+
 const coursesIn: iCourse[] = [
   {
     id: 1,
@@ -136,12 +140,17 @@ type iCourse = {
 };
 
 const CourseCard = ({ course }: { course: iCourse }) => {
-  const { name, url } = course;
+  const { name } = course;
 
   return (
-    <div className="min-w-[240px] w-[240px] md:w-[360px] md:min-w-[360px] h-full bg-white">
-      <h4>{name}</h4>
-      <a href={url}>Descobrir</a>
+    <div className="h-[320px] bg-gray-500 relative">
+      <img src={a} alt="aasd" className="w-full" />
+      <button
+        onClick={() => console.log(name)}
+        className="absolute left-0 right-0 top-0 bottom-0 bg-black/60 text-white flex items-center pt-4 flex-col"
+      >
+        <h4>{name}</h4>
+      </button>
     </div>
   );
 };
@@ -149,7 +158,7 @@ const CourseCard = ({ course }: { course: iCourse }) => {
 const CoursesList = () => {
   return (
     <section className="h-[400px] bg-forest-600/90 p-2 flex flex-col justify-between">
-      <div className="h-full container mx-auto">
+      <div className="h-full container mx-auto flex flex-col gap-4">
         <div className="pb-2 text-forest-50 flex justify-between items-center">
           <h3 className="text-2xl">Nossos cursos</h3>
           <ul className="flex text-forest-800 gap-4">
@@ -186,11 +195,19 @@ const CoursesList = () => {
             </li>
           </ul>
         </div>
-        <ul className="pb-2 h-5/6 flex gap-2 items-end overflow-x-auto">
+        <Carousel
+          showArrows
+          autoPlay
+          centerMode
+          transitionTime={1000}
+          interval={5000}
+          showThumbs={false}
+          className="rounded overflow-hidden"
+        >
           {coursesIn.map((course) => (
             <CourseCard course={course} key={course.id} />
           ))}
-        </ul>
+        </Carousel>
       </div>
     </section>
   );
