@@ -11,6 +11,7 @@
 * react-router-dom
 * tailwindCSS
 * react-icons
+* react-responsive-carousel
 
 ###
 
