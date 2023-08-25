@@ -1,132 +1,131 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import a from "../assets/bg1.jpg";
 
 const coursesIn: iCourse[] = [
   {
     id: 1,
     name: "Administração",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/adm.jpg",
     url: "https://oficial.unimar.br/cursos/administracao/",
   },
   {
     id: 2,
     name: "Análise e desenvolvimento de sistemas",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/ands-e1644500942830.jpg",
     url: "https://oficial.unimar.br/cursos/analise-e-desenvolvimento-de-sistemas/",
   },
   {
     id: 3,
     name: "Arquitetura e Urbanismo",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/arq.jpg",
     url: "https://oficial.unimar.br/cursos/arquitetura-e-urbanismo/",
   },
   {
     id: 4,
     name: "Ciência da Computação",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2022/08/ciencia-da-computacao-2-e1661889313598.jpg",
     url: "https://oficial.unimar.br/cursos/ciencia-da-computacao/",
   },
   {
     id: 5,
     name: "Biomedicina",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/biomed.jpg",
     url: "https://oficial.unimar.br/cursos/biomedicina/",
   },
   {
     id: 6,
     name: "Ciência Contábeis",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/contabeis-2.jpg",
     url: "https://oficial.unimar.br/cursos/ciencias-contabeis/",
   },
   {
     id: 7,
     name: "Direito",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/direito.jpg",
     url: "https://oficial.unimar.br/cursos/direito/",
   },
   {
     id: 8,
     name: "Educação Física",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/edfisica-1.jpg",
     url: "https://oficial.unimar.br/cursos/educacao-fisica/",
   },
   {
     id: 9,
     name: "Enfermagem",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/enf.jpg",
     url: "https://oficial.unimar.br/cursos/enfermagem/",
   },
   {
     id: 10,
     name: "Engenharia Agronômica",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/engagro.jpg",
     url: "https://oficial.unimar.br/cursos/engenharia-agronomica/",
   },
   {
     id: 11,
     name: "Engenharia Civil",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/engcivil.jpg",
     url: "https://oficial.unimar.br/cursos/engenharia-civil/",
   },
   {
     id: 12,
     name: "Engenharia de Produção Mecânica",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/edprod.jpg",
     url: "https://oficial.unimar.br/cursos/engenharia-de-producao-mecanica/",
   },
   {
     id: 13,
     name: "Engenharia Elétrica",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/engeletrica.jpg",
     url: "https://oficial.unimar.br/cursos/engenharia-eletrica/",
   },
   {
     id: 14,
     name: "Farmácia",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/farmaciaa.jpg",
     url: "https://oficial.unimar.br/cursos/farmacia/",
   },
   {
     id: 15,
     name: "Fisioterapia",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/fisio.jpg",
     url: "https://oficial.unimar.br/cursos/fisioterapia/",
   },
   {
     id: 16,
     name: "Medicina",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/07/medicina-1.jpg",
     url: "https://oficial.unimar.br/cursos/medicina/",
   },
   {
     id: 17,
     name: "Medicina Veterinária",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/vet.jpg",
     url: "https://oficial.unimar.br/cursos/medicina-veterinaria/",
   },
   {
     id: 18,
     name: "Nutrição",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/nutricao.jpg",
     url: "https://oficial.unimar.br/cursos/nutricao/",
   },
   {
     id: 19,
     name: "Odontologia",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/odonto-1.jpg",
     url: "https://oficial.unimar.br/cursos/odontologia/",
   },
   {
     id: 20,
     name: "Psicologia",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/psico-e1595345018825.jpg",
     url: "https://oficial.unimar.br/cursos/psicologia/",
   },
   {
     id: 21,
     name: "Publicidade e Propaganda",
-    photo: "",
+    photo: "https://oficial.unimar.br/wp-content/uploads/2019/08/pp.jpg",
     url: "https://oficial.unimar.br/cursos/publicidade-e-propaganda/",
   },
 ];
@@ -140,14 +139,14 @@ type iCourse = {
 };
 
 const CourseCard = ({ course }: { course: iCourse }) => {
-  const { name } = course;
+  const { name, photo } = course;
 
   return (
-    <div className="h-[320px] bg-gray-500 relative">
-      <img src={a} alt="aasd" className="w-full" />
+    <div className="bg-white relative">
+      <img src={photo} alt={name+" cover image"} className="w-[calc(100% - 20px)] mx-auto px-10 h-[140px] md:h-[320px] object-cover bg-[center_center]" />
       <button
         onClick={() => console.log(name)}
-        className="absolute left-0 right-0 top-0 bottom-0 bg-black/60 text-white flex items-center pt-4 flex-col"
+        className="absolute w-full top-0 bottom-0 bg-black/60 hover:bg-black/50 transition-colors duration-300 text-white flex items-center pt-4 flex-col"
       >
         <h4>{name}</h4>
       </button>
@@ -157,7 +156,7 @@ const CourseCard = ({ course }: { course: iCourse }) => {
 
 const CoursesList = () => {
   return (
-    <section className="h-[400px] bg-forest-600/90 p-2 flex flex-col justify-between">
+    <section className="bg-forest-600/90 p-2 flex flex-col justify-between">
       <div className="h-full container mx-auto flex flex-col gap-4">
         <div className="pb-2 text-forest-50 flex justify-between items-center">
           <h3 className="text-2xl">Nossos cursos</h3>
@@ -199,10 +198,13 @@ const CoursesList = () => {
           showArrows
           autoPlay
           centerMode
-          transitionTime={1000}
-          interval={5000}
+          showIndicators={false}
+          showStatus={false}
+          transitionTime={800}
+          interval={6000}
           showThumbs={false}
-          className="rounded overflow-hidden"
+          infiniteLoop
+          className="rounded-xl overflow-hidden"
         >
           {coursesIn.map((course) => (
             <CourseCard course={course} key={course.id} />
