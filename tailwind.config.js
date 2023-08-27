@@ -24,6 +24,9 @@ export default {
         "forest-800": "#061e33",
         "forest-900": "#020e1a",
       },
+      backgroundImage: {
+        'unimar': "url('/src/assets/unimar-bg-asd.webp')"
+      }
     },
     animation: {
       goDown: "goDown 2s ease-in-out infinite",

@@ -14,8 +14,9 @@ const CourseCard = ({ course }: { course: iCourse }) => {
 
   return (
     <>
-      <div className="bg-white relative">
-        <img src={photo} alt={name + " cover image"} className="w-[calc(100% - 20px)] mx-auto px-10 h-[140px] md:h-[320px] object-cover bg-[center_center]" />
+      <div className="bg-forest-600 relative">
+        {/* To add spacing entering images add in image class px-[# quantity #] */}
+        <img loading="lazy" src={photo} alt={name + " cover image"} className="mx-auto h-[140px] md:h-[320px] object-cover bg-[center_center]" />
         <button
           onClick={toggleModal}
           className="absolute w-full top-0 bottom-0 bg-black/60 hover:bg-black/30 transition-colors duration-300 text-white flex items-center pt-4 flex-col"

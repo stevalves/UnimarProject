@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import { useEffect, useState } from "react";
 import MotionScroll from "../Scroll";
 import { Link } from "react-router-dom";
+import Logo from "../Logo";
 
 const Header = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -41,9 +42,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex w-full items-center justify-between p-2">
         <Link to="/">
-          <h1 className="text-[1.5rem] tracking-wide md:text-[2rem] text-forest-100">
-            <img src="https://oficial.unimar.br/wp-content/themes/universo-unimar/images/logo.svg" alt="Unimar Logo" className="w-3/6 md:w-5/6"/>
-          </h1>
+          <Logo />
         </Link>
         <NavBar />
         <MotionScroll />

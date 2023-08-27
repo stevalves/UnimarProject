@@ -36,14 +36,14 @@ html {
 }
 
 /* Bg image */
-body {
-  background-image: url(assets/bg1.jpg);
+/* body {
+  background-image: url(assets/unimar-bg.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   object-fit: cover;
-}
+} */
 
 /* Unimar BG: 
 
