@@ -10,7 +10,7 @@ const Me = () => {
   }, []);
 
   return (
-    <main className="w-full h-[calc(100vh-90px)] bg-forest-500 flex items-center justify-center">
+    <main className="w-full min-h-[calc(100vh-90px)] bg-forest-500 flex items-center justify-center">
       <div
         data-aos="flip-down"
         className="w-full max-w-[720px] bg-forest-50 p-2 rounded shadow-2xl flex flex-col justify-between gap-4"

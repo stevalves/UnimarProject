@@ -2,7 +2,7 @@ import { ComponentProps } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 
 const tv_logo = tv({
-  base: "w-4/6",
+  base: "w-1/2 md:w-4/6",
 });
 
 export type iLogoProps = ComponentProps<"img"> & VariantProps<typeof tv_logo>;

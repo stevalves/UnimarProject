@@ -25,7 +25,7 @@ export default {
         "forest-900": "#020e1a",
       },
       backgroundImage: {
-        'unimar': "url('/src/assets/unimar-bg-asd.webp')"
+        'unimar': "url('/src/assets/unimar-bg.webp')"
       }
     },
     animation: {

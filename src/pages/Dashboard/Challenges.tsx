@@ -10,8 +10,8 @@ const Challenges = () => {
           <h4 className="text-forest-50 font-bold text-2xl text-center md:text-start">
             Exemplos de
           </h4>
-          <div className="bg-forest-50 rounded xl:p-4 p-2 flex w-full">
-            <div className="w-1/2 xl:hover:w-[55%] duration-300 md:border-r border-forest-900 p-2">
+          <div className="bg-forest-50 rounded xl:p-4 p-2 flex w-full flex-col sm:flex-row">
+            <div className="sm:w-1/2 xl:hover:w-[55%] duration-300 md:border-r border-forest-900 p-2">
               <h6 className="flex gap-2 items-center font-medium underline">
                 <AiOutlineCheckSquare />
                 Benefícios
@@ -67,7 +67,7 @@ const Challenges = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-1/2 xl:hover:w-[55%] duration-300 md:border-l border-forest-900 p-2">
+            <div className="sm:w-1/2 xl:hover:w-[55%] duration-300 md:border-l border-forest-900 p-2">
               <h6 className="flex gap-2 items-center font-medium underline">
                 <AiOutlineCloseSquare />
                 Desafios

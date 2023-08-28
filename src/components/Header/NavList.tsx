@@ -1,10 +1,4 @@
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-} from "react-icons/ai";
+import { Link } from "react-router-dom";
 import { tv } from "tailwind-variants";
 
 interface iNavValues {
@@ -15,64 +9,48 @@ interface iNavValues {
 
 const navValues: iNavValues[] = [
   {
-    id: "Unimar Facebook",
+    id: "Home",
     value: (
       <>
-        <AiFillFacebook />
-        <h4 className="flex sm:hidden mt-1 text-[1.5rem] tracking-wide font-light">
-          Facebook
+        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">
+          Home
         </h4>
       </>
     ),
-    href: "https://www.facebook.com/universidadedemarilia/",
+    href: "/",
   },
   {
-    id: "Unimar Instagram",
+    id: "StartUp",
     value: (
       <>
-        <AiFillInstagram />
-        <h4 className="flex sm:hidden mt-1 text-[1.5rem] tracking-wide font-light">
-          Instagram
+        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">
+          StartUp
         </h4>
       </>
     ),
-    href: "https://www.instagram.com/unimaroficial/",
+    href: "/startapp",
   },
   {
-    id: "Unimar Twitter",
+    id: "EAD",
     value: (
       <>
-        <AiFillTwitterCircle />
-        <h4 className="flex sm:hidden mt-1 text-[1.5rem] tracking-wide font-light">
-          Twitter
+        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">
+          EAD
         </h4>
       </>
     ),
-    href: "https://twitter.com/unimar_oficial",
+    href: "/dashboard",
   },
   {
-    id: "Unimar LinkedIn",
+    id: "Sobre",
     value: (
       <>
-        <AiFillLinkedin />
-        <h4 className="flex sm:hidden mt-1 text-[1.5rem] tracking-wide font-light">
-          LinkedIn
+        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">
+          Sobre
         </h4>
       </>
     ),
-    href: "https://www.linkedin.com/school/universidade-de-mar%C3%ADlia/",
-  },
-  {
-    id: "Unimar YouTube",
-    value: (
-      <>
-        <AiFillYoutube />
-        <h4 className="flex sm:hidden mt-1 text-[1.5rem] tracking-wide font-light">
-          YouTube
-        </h4>
-      </>
-    ),
-    href: "https://www.youtube.com/user/UnimarTV",
+    href: "/me",
   },
 ];
 
@@ -82,7 +60,7 @@ interface iNavList {
 
 const NavList = ({ open }: iNavList) => {
   const list_tv = tv({
-    base: "fixed sm:py-4 overflow-hidden flex flex-col transition-all sm:static sm:h-max text-[2rem] sm:text-[1.5rem] justify-between py-24 sm:gap-2 w-0 sm:bg-transparent sm:flex-row sm:w-max sm:visible overflow-x-hidden bg-forest-800/90 invisible top-0 h-screen right-0 duration-1",
+    base: "absolute sm:py-4 overflow-hidden flex flex-col transition-all sm:static sm:h-max text-[.75rem] sm:text-[1.5rem] justify-between py-24 sm:gap-4 w-0 sm:bg-transparent sm:flex-row sm:w-max sm:visible overflow-x-hidden bg-forest-800/90 invisible top-0 h-screen right-0",
     variants: {
       open: {
         true: "w-full visible z-10",
@@ -101,13 +79,12 @@ const NavList = ({ open }: iNavList) => {
           key={value.id}
           title={value.id}
         >
-          <a
-            target="_blank"
-            href={value.href}
-            className="flex flex-col items-center transition-colors duration-[.3s] hover:text-forest-200"
+          <Link
+            to={value.href}
+            className="flex flex-col items-center transition-colors duration-[.3s] text-white hover:text-forest-50 hover:underline"
           >
             {value.value}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
