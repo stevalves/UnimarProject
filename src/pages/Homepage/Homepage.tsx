@@ -7,10 +7,13 @@ const Homepage = () => {
   }, []);
 
   return (
-    <main className="bg-unimar bg-center bg-cover bg-no-repeat bg-fixed object-cover">
-      <InitialHome />
-      <CoursesList />
-      <AboutUs />
+    <main className="relative">
+      <div className="fixed inset-0 bg-cover bg-center bg-unimar" />
+      <div className="relative z-10">
+        <InitialHome />
+        <CoursesList />
+        <AboutUs />
+      </div>
     </main>
   );
 };

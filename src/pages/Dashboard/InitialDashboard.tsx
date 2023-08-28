@@ -54,7 +54,7 @@ const InitialDashboard = () => {
             <img src={teacher} alt="teacher" className="w-full" />
           </div>
         </div>
-        <div className="absolute bottom-12 text-forest-50 text-5xl animate-goDown">
+        <div className="absolute bottom-12 text-forest-50 text-5xl animate-goDown xl:block hidden">
           <TbArrowDown />
         </div>
       </section>
