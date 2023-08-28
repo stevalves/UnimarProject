@@ -3,15 +3,22 @@
 </p>
 
 # Projeto Unimar
-#### Nos foi passado um desafio aonde a finalidade era contribuir de alguma forma para a universidade com a criação de um website.
+Esta aplicação foi desenvolvida durante um bootcamp oferecido pela Unimar, no qual aprendemos desde os fundamentos do HTML/CSS e JavaScript até a construção de uma aplicação completa em React.
+
+Dividi a aplicação em duas vertentes: uma delas tem o propósito de apresentar a universidade de forma mais simplificada, com o objetivo de fornecer informações rápidas e concisas sobre os cursos e sua relevância no mercado, além de oferecer uma breve visão sobre a universidade.
+
+Já a outra parte que ainda está em construção visa alinhar com o público leitor a ideia de que a faculdade EAD é uma formação que auxilia muito quem não consegue ir todos os dias à faculdade e que é possível sim assimilar todo o conhecimento passado de casa, além de desmistificar o estigma que as empresas têm em relação à formação EAD.
 
 ## **Tecnologias e bibliotecas**:
 * React
 * TypeScript
 * react-router-dom
 * tailwindCSS
+* tailwind-variants
 * react-icons
 * react-responsive-carousel
+* framer-motion
+* AOS
 
 ###
 
@@ -44,3 +51,5 @@ yarn dev
 # caso use pnpm
 pnpm run dev
 ```
+
+<p align="center">Projeto iniciado em vite</p>
