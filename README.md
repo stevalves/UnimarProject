@@ -52,4 +52,11 @@ yarn dev
 pnpm run dev
 ```
 
+### Source
+https://sambatech.com/blog/insights/o-que-e-ead/#:~:text=Principais%20caracter%C3%ADsticas%20do%20EAD&text=Ao%20contr%C3%A1rio%20de%20uma%20sala,estudar%20no%20seu%20pr%C3%B3prio%20ritmo.
+
+https://www.blogdoead.com.br/tag/ead/vantagens-do-ead
+
+https://www.svgrepo.com/collection/soco-st-various-illustration-vectors/
+
 <p align="center">Projeto iniciado em vite</p>

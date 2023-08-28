@@ -4,7 +4,7 @@ import womanThink from "../../assets/thinking-woman.svg";
 
 const Challenges = () => {
   return (
-    <section id="chal" className="min-h-screen w-full flex items-end">
+    <section id="chal" className="min-h-screen w-full flex items-end border-b border-forest-50">
       <div className="container h-full mx-auto flex flex-col xl:flex-row gap-4 xl:h-screen items-center">
         <div className="w-full h-max shadow-lg flex flex-col gap-2">
           <h4 className="text-forest-50 font-bold text-2xl text-center md:text-start">

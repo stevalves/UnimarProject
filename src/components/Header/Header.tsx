@@ -25,7 +25,7 @@ const Header = () => {
     base: "bg-transparent fixed right-0 left-0 top-0 text-[2rem] text-gray-300 transition-[3s] flex items-center justify-center z-20",
     variants: {
       see: {
-        true: "py-2 opacity-[0.85] backdrop-blur shadow-xl",
+        true: "py-2 opacity-[0.85] backdrop-blur shadow-xl bg-black/50",
         false: "py-1",
       },
     },
