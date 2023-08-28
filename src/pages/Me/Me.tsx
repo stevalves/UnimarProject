@@ -1,8 +1,14 @@
+import { useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { TbWorld } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 const Me = () => {
+
+  useEffect(() => {
+    document.title = "Unimar - Eu";
+  }, []);
+
   return (
     <main className="w-full h-[calc(100vh-90px)] bg-forest-500 flex items-center justify-center">
       <div

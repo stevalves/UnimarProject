@@ -39,7 +39,7 @@ export const Modal = ({
   }, [toggleModal]);
 
   return createPortal(
-    <div className="z-50 animate-modalDown fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black/25">
+    <div className="z-50 animate-modalDown fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black/50">
       <div
         ref={noClose ? null : ref}
         className="w-[90%] max-w-[600px] h-max rounded-lg relative overflow-y-auto shadow-2xl"

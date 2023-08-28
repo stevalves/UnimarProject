@@ -9,7 +9,7 @@ const InitialHome = () => {
         <img data-aos="zoom-in-down" src={logo} alt="logo_exam" title="Unimar Vestibular 2024"/>
         <div className="flex flex-col md:flex-row-reverse gap-4 w-full mt-16 px-4 justify-evenly text-forest-50">
           <Link
-            to="ead"
+            to="dashboard"
             data-aos="zoom-in-right"
             data-aos-delay="500"
             className="px-4 py-2 text-xl rounded border-forest-50 hover:underline text-center"

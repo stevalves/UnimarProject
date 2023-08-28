@@ -4,14 +4,17 @@ import Homepage from "../pages/Homepage/Homepage";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Footer from "../components/Footer";
 import Me from "../pages/Me/Me";
+import ScrollToTop from "../utils/ScrollToTop";
 
 const Layout = () => {
   return (
-    <>
-      <Header />
-      <Outlet />
-      <Footer />
-    </>
+    <ScrollToTop>
+      <>
+        <Header />
+        <Outlet />
+        <Footer />
+      </>
+    </ScrollToTop>
   );
 };
 
