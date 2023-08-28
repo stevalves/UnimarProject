@@ -39,9 +39,9 @@ const EadBr = () => {
           </p>
           <div className="self-center flex flex-col shadow-2xl p-2 rounded gap-2">
             <h6>Resumindo, o apontamento levantou que entre 2011 a 2012 teve:</h6>
-            <p data-aos="fade-left" data-aos-delay="300" data-aos-once className="underline">Um aumento de <strong>474%</strong> de ingressantes;</p>
-            <p data-aos="fade-left" data-aos-delay="600" data-aos-once className="underline">Uma diminuição dos cursos presenciais em <strong>23,4%</strong>;</p>
-            <p data-aos="fade-left" data-aos-delay="900" data-aos-once className="underline">Um aumento no total de ingressos de <strong>18,4%</strong> para <strong>62,8%</strong>.</p>
+            <p data-aos="fade-down" data-aos-delay="300" data-aos-once className="underline">Um aumento de <strong>474%</strong> de ingressantes;</p>
+            <p data-aos="fade-down" data-aos-delay="600" data-aos-once className="underline">Uma diminuição dos cursos presenciais em <strong>23,4%</strong>;</p>
+            <p data-aos="fade-down" data-aos-delay="900" data-aos-once className="underline">Um aumento no total de ingressos de <strong>18,4%</strong> para <strong>62,8%</strong>.</p>
           </div>
         </div>
       </div>

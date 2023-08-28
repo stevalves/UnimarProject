@@ -1,23 +1,21 @@
 import { useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { TbWorld } from "react-icons/tb";
-import { Link } from "react-router-dom";
 
 const Me = () => {
-
   useEffect(() => {
     document.title = "Unimar - Eu";
   }, []);
 
   return (
-    <main className="w-full min-h-[calc(100vh-90px)] bg-forest-500 flex items-center justify-center">
+    <main className="w-full max-w-[100vw] overflow-hidden min-h-[calc(100vh)] bg-forest-500 flex items-center justify-center">
       <div
-        data-aos="flip-down"
-        className="w-full max-w-[720px] bg-forest-50 p-2 rounded shadow-2xl flex flex-col justify-between gap-4"
+        data-aos="fade-down"
+        data-aos-delay="50"
+        className="w-full max-w-[600px] bg-forest-50 p-2 my-24 md:my-0 rounded shadow-2xl flex flex-col justify-between gap-4"
       >
-        <div className="h-[55px] w-full bg-forest-600 rounded-xl flex items-center justify-between px-4 text-forest-50 font-semibold text-xl">
+        <div className="h-[55px] w-full bg-forest-600 rounded-xl flex items-center px-4 text-forest-50 font-semibold text-xl">
           <h4>Detalhes</h4>
-          <Link to="/" className="hover:underline font-normal">Voltar</Link>
         </div>
         <div className="md:p-2 text-forest-900 flex flex-col gap-2">
           <p>
