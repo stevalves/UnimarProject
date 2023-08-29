@@ -12,7 +12,7 @@ Desenvolvi uma homepage com o objetivo de apresentar a universidade de maneira s
 
 A seção 'EAD' tem como propósito apresentar ao público leitor, por meio de dados públicos, a ideia de que a modalidade de ensino a distância da faculdade é uma alternativa extremamente vantajosa para aqueles que não podem frequentar a instituição diariamente. Além disso, essa seção visa enfatizar a habilidade de absorver o conhecimento de forma eficiente no ambiente domiciliar.
 
-Já a seção 'StartUp' funciona como uma rede exclusiva da universidade, com o objetivo de conectar empresas, microempresas e startups estabelecidas dentro da instituição com alunos que buscam oportunidades de trabalho e estágio.
+Já a seção 'StartUp' funciona como uma rede exclusiva da universidade, com o objetivo de conectar empresas, microempresas e startups parceiras e/ou estabelecidas dentro da instituição com alunos que buscam oportunidades de trabalho e estágio.
 
 ## **Tecnologias e bibliotecas**:
 
