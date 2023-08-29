@@ -12,9 +12,7 @@ const navValues: iNavValues[] = [
     id: "Home",
     value: (
       <>
-        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">
-          Home
-        </h4>
+        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">Home</h4>
       </>
     ),
     href: "/",
@@ -23,20 +21,16 @@ const navValues: iNavValues[] = [
     id: "StartUp",
     value: (
       <>
-        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">
-          StartUp
-        </h4>
+        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">StartUp</h4>
       </>
     ),
-    href: "/startapp",
+    href: "/unitalk",
   },
   {
     id: "EAD",
     value: (
       <>
-        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">
-          EAD
-        </h4>
+        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">EAD</h4>
       </>
     ),
     href: "/dashboard",
@@ -45,20 +39,14 @@ const navValues: iNavValues[] = [
     id: "Sobre",
     value: (
       <>
-        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">
-          Sobre
-        </h4>
+        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">Sobre</h4>
       </>
     ),
     href: "/me",
   },
 ];
 
-interface iNavList {
-  open: boolean;
-}
-
-const NavList = ({ open }: iNavList) => {
+const NavList = ({ open }: { open: boolean }) => {
   const list_tv = tv({
     base: "absolute sm:py-4 overflow-hidden flex flex-col transition-all sm:static sm:h-max text-[.75rem] sm:text-[1.5rem] justify-between py-24 sm:gap-4 w-0 sm:bg-transparent sm:flex-row sm:w-max sm:visible overflow-x-hidden bg-forest-800/90 invisible top-0 h-screen right-0",
     variants: {

@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        logo: ['Cantarell', 'sans-serif']
+      },
       borderRadius: {
         left: "8px 0 0 8px",
         right: "0 8px 8px 0",

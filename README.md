@@ -3,22 +3,28 @@
 </p>
 
 # Projeto Unimar
-Esta aplicação foi desenvolvida durante um bootcamp oferecido pela Unimar, no qual aprendemos desde os fundamentos do HTML/CSS e JavaScript até a construção de uma aplicação completa em React.
 
-Dividi a aplicação em duas vertentes: uma delas tem o propósito de apresentar a universidade de forma mais simplificada, com o objetivo de fornecer informações rápidas e concisas sobre os cursos e sua relevância no mercado, além de oferecer uma breve visão sobre a universidade.
+Esta aplicação foi desenvolvida durante um bootcamp oferecido pela Unimar. Neste programa, abrangemos desde os conceitos fundamentais de HTML/CSS e JavaScript até a criação de uma aplicação completa em React.
 
-Já a outra parte que ainda está em construção visa alinhar com o público leitor a ideia de que a faculdade EAD é uma formação que auxilia muito quem não consegue ir todos os dias à faculdade e que é possível sim assimilar todo o conhecimento passado de casa, além de desmistificar o estigma que as empresas têm em relação à formação EAD.
+O desafio proposto pela universidade envolveu a criação de uma aplicação que contribuísse de forma significativa com a instituição.
+
+Desenvolvi uma homepage com o objetivo de apresentar a universidade de maneira simplificada, fornecendo informações rápidas e concisas sobre os cursos e proporcionando uma visão geral da instituição.
+
+A seção 'EAD' tem como propósito apresentar ao público leitor, por meio de dados públicos, a ideia de que a modalidade de ensino a distância da faculdade é uma alternativa extremamente vantajosa para aqueles que não podem frequentar a instituição diariamente. Além disso, essa seção visa enfatizar a habilidade de absorver o conhecimento de forma eficiente no ambiente domiciliar.
+
+Já a seção 'StartUp' funciona como uma rede exclusiva da universidade, com o objetivo de conectar empresas, microempresas e startups estabelecidas dentro da instituição com alunos que buscam oportunidades de trabalho e estágio.
 
 ## **Tecnologias e bibliotecas**:
-* React
-* TypeScript
-* react-router-dom
-* tailwindCSS
-* tailwind-variants
-* react-icons
-* react-responsive-carousel
-* framer-motion
-* AOS
+
+- React
+- TypeScript
+- react-router-dom
+- tailwindCSS
+- tailwind-variants
+- react-icons
+- react-responsive-carousel
+- framer-motion
+- AOS
 
 ###
 
@@ -52,7 +58,8 @@ yarn dev
 pnpm run dev
 ```
 
-### Source
+### Fontes
+
 https://sambatech.com/blog/insights/o-que-e-ead/#:~:text=Principais%20caracter%C3%ADsticas%20do%20EAD&text=Ao%20contr%C3%A1rio%20de%20uma%20sala,estudar%20no%20seu%20pr%C3%B3prio%20ritmo.
 
 https://www.blogdoead.com.br/tag/ead/vantagens-do-ead

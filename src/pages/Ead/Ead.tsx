@@ -1,14 +1,14 @@
-import { InitialDashboard, Characteristics, Challenges, EadBr, EadHere } from ".";
+import { InitialEad, Characteristics, Challenges, EadBr, EadHere } from ".";
 import { useEffect } from "react";
 
-const Dashboard = () => {
+const Ead = () => {
   useEffect(() => {
-    document.title = "Unimar - Dashboard";
+    document.title = "Unimar - EAD";
   }, []);
 
   return (
     <main className="bg-forest-500">
-      <InitialDashboard />
+      <InitialEad />
       <Characteristics />
       <Challenges />
       <EadBr />
@@ -17,4 +17,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Ead;

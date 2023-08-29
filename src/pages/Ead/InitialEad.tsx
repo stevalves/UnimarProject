@@ -1,7 +1,7 @@
 import { TbArrowDown } from "react-icons/tb";
 import teacher from "../../assets/teacher-female.svg";
 
-const InitialDashboard = () => {
+const InitialEad = () => {
   return (
     <section className="min-h-screen w-full flex justify-center items-end border-b-2 border-forest-50">
       <div
@@ -60,4 +60,4 @@ const InitialDashboard = () => {
   );
 };
 
-export default InitialDashboard;
+export default InitialEad;
