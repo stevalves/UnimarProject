@@ -19,12 +19,14 @@ Já a seção 'StartUp' funciona como uma rede exclusiva da universidade, com o 
 - React
 - TypeScript
 - react-router-dom
+- react-hook-form
 - tailwindCSS
 - tailwind-variants
 - react-icons
 - react-responsive-carousel
 - framer-motion
 - AOS
+- zod
 
 ###
 
