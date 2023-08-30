@@ -8,6 +8,8 @@ import UniTalkLayout from "../layouts/UniTalkLayout";
 import Login from "../pages/UniTalk/Login/Login";
 import Register from "../pages/UniTalk/Register/Register";
 import Dashboard from "../pages/UniTalk/Dashboard/Dashboard";
+import RegisterUser from "../pages/UniTalk/Register/User/RegisterUser";
+import RegisterCompany from "../pages/UniTalk/Register/Company/Register";
 
 function Router() {
   return (
@@ -21,6 +23,8 @@ function Router() {
         <Route path="" element={<UniTalk />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="register/user" element={<RegisterUser />} />
+        <Route path="register/company" element={<RegisterCompany />} />
         <Route path="dashboard" element={<Dashboard />} />
       </Route>
     </Routes>

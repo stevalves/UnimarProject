@@ -33,7 +33,7 @@ const navValues: iNavValues[] = [
         <h4 className="flex mt-1 text-[1.5rem] tracking-wide">EAD</h4>
       </>
     ),
-    href: "/dashboard",
+    href: "/ead",
   },
   {
     id: "Sobre",

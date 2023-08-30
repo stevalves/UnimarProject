@@ -45,7 +45,7 @@ const Input = forwardRef<HTMLInputElement, iInputProps>(
           defaultValue={value}
           className={tv_input({ error: Boolean(errorMessage) })}
         />
-        <p className="text-sm text-red-700">{errorMessage}</p>
+        {errorMessage && <p className="text-sm text-red-700">{String(errorMessage)}</p>}
       </fieldset>
     );
   }

@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const registerSchema = z
+export const registerCompanySchema = z
   .object({
     name: z.string().nonempty("Nome é obrigatório."),
     email: z
@@ -15,4 +15,4 @@ export const registerSchema = z
     path: ["confirm"],
   });
 
-export type tRegister = z.infer<typeof registerSchema>;
+export type tRegisterCompany = z.infer<typeof registerCompanySchema>;

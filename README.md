@@ -68,4 +68,6 @@ https://www.blogdoead.com.br/tag/ead/vantagens-do-ead
 
 https://www.svgrepo.com/collection/soco-st-various-illustration-vectors/
 
+https://app.logo.com/
+
 <p align="center">Projeto iniciado em vite</p>

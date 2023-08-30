@@ -1,5 +1,11 @@
 const Dashboard = () => {
-  return <>dashboard</>
-}
+  return (
+    <div>
+      {/* Seu             */}
+      {/*     código      */}
+      {/*            aqui */}
+    </div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;

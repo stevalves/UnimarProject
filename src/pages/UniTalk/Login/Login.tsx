@@ -26,7 +26,7 @@ const Login = () => {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-r from-forest-700 to-forest-800 flex flex-col font-logo">
+    <main className="min-h-screen bg-gradient-to-r from-forest-700 to-forest-800 flex flex-col font-logo py-28">
       <Form title="Bem vindo de volta!" onSubmit={handleSubmit(handleLogin)}>
         <Input
           id="nome"
