@@ -26,6 +26,7 @@ export default {
         "forest-700": "#103454",
         "forest-800": "#061e33",
         "forest-900": "#020e1a",
+        "forest-950": "#000817",
       },
       backgroundImage: {
         'unimar': "url('/src/assets/unimar-bg.webp')"

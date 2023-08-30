@@ -1,26 +1,15 @@
 import { Link, useLocation, Location } from "react-router-dom";
 import Header from "../../../components/Header/Header";
 import unitalk from "../../../assets/unitalk-onlydraw1.png";
-import { tv } from "tailwind-variants";
 import { useEffect, useState } from "react";
 import Hamburguer from "../../../components/Header/Hamburguer";
 import useAuth from "../../../hooks/useAuth";
-
-const list_tv = tv({
-  base: "absolute py-1 sm:border-l sm:pl-4 overflow-hidden flex transition-all sm:static sm:h-max text-[.75rem] sm:text-[1.5rem] justify-evenly sm:gap-4 w-0 sm:bg-transparent sm:w-max sm:visible overflow-x-hidden bg-forest-800 invisible -bottom-9 h-max right-0",
-  variants: {
-    open: {
-      true: "w-full visible z-10",
-    },
-  },
-  defaultVariants: {
-    open: false,
-  },
-});
+import Unlogged from "./Unlogged";
+import Logged from "./Logged";
 
 const UniTalkHeader = () => {
   const [open, setOpen] = useState<boolean>(false);
-  const { user, logOut } = useAuth();
+  const { user } = useAuth();
 
   const location: Location = useLocation();
   useEffect(() => {
@@ -33,25 +22,12 @@ const UniTalkHeader = () => {
         <img src={unitalk} alt="UniTalk logo" />
         <h1 className="font-logo md:text-5xl text-2xl">UniTalk</h1>
       </Link>
-      {!user ? (
-        <ul className={list_tv({ open })}>
-          <Link
-            to="/unitalk/register"
-            className="border px-2 py-1 hover:bg-forest-50 hover:text-forest-900 duration-300 transition-colors sm:w-max w-1/3 text-center"
-          >
-            Registro
-          </Link>
-          <Link
-            to="/unitalk/login"
-            className="border px-2 py-1 hover:bg-forest-50 hover:text-forest-900 duration-300 transition-colors sm:w-max w-1/3 text-center"
-          >
-            Login
-          </Link>
-        </ul>
+      {user ? (
+        <Logged />
       ) : (
-        <h1 onClick={logOut}>{user}</h1>
+        <Unlogged open={open} />
       )}
-      <Hamburguer open={open} setOpen={setOpen} />
+      {!user && <Hamburguer open={open} setOpen={setOpen} />}
     </Header>
   );
 };

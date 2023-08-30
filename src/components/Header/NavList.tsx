@@ -18,10 +18,10 @@ const navValues: iNavValues[] = [
     href: "/",
   },
   {
-    id: "StartUp",
+    id: "UniTalk",
     value: (
       <>
-        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">StartUp</h4>
+        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">UniTalk</h4>
       </>
     ),
     href: "/unitalk",
