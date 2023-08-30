@@ -11,7 +11,7 @@ const Register = () => {
         <Link
           data-aos="zoom-in-down"
           to="user"
-          className="bg-white rounded md:w-[400px] overflow-hidden"
+          className="bg-white rounded md:w-[400px] overflow-hidden before:content-[''] before:w-[40px] before:h-[150%] before:rotate-[35deg] before:absolute before:bg-white/50 before:-translate-x-[500px] before:blur-md hover:before:translate-x-[500px] before:transition-transform before:duration-1000"
         >
           <img
             src={student}
@@ -32,7 +32,7 @@ const Register = () => {
         <Link
           data-aos="zoom-in-down"
           to="company"
-          className="bg-white rounded md:w-[400px] h-full overflow-hidden"
+          className="bg-white rounded md:w-[400px] h-full overflow-hidden before:content-[''] before:w-[40px] before:h-[150%] before:rotate-[35deg] before:absolute before:bg-white/50 before:-translate-x-[500px] before:blur-md hover:before:translate-x-[500px] before:transition-transform before:duration-1000"
         >
           <img
             src={company}

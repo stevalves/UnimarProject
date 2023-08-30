@@ -1,21 +1,27 @@
-import { useEffect } from "react"
-import Router from "./routes/Router"
-import "aos/dist/aos.css"
-import Aos from "aos"
+import Aos from "aos";
+import { useEffect } from "react";
+import Router from "./routes/Router";
+import { ToastContainer } from "react-toastify";
+import { AuthProvider } from "./providers/AuthProvider";
+
+import "aos/dist/aos.css";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-
   useEffect(() => {
     Aos.init({
       duration: 1200,
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <>
-      <Router />
+      <AuthProvider>
+        <Router />
+      </AuthProvider>
+      <ToastContainer theme="dark" position="bottom-right" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
