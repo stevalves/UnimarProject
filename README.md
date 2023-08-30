@@ -23,6 +23,7 @@ Já a seção 'StartUp' funciona como uma rede exclusiva da universidade, com o 
 - tailwindCSS
 - tailwind-variants
 - react-icons
+- react-toastify
 - react-responsive-carousel
 - framer-motion
 - AOS
