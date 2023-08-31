@@ -3,13 +3,13 @@ import PostCard from "../../components/PostCard";
 import useJob from "../../hooks/useJob";
 
 const AppliedJobs = () => {
-  const { jobs } = useJob();
+  const { apliJobs } = useJob();
 
   return (
-    <main className="rounded-top bg-black p-2 w-full xl:4/6 min-h-screen z-10 lg:px-32 text-forest-50">
+    <main className="rounded-top z-10 w-full min-h-screen xl:w-4/6 lg:px-32 bg-black p-2 text-forest-50">
       <ul className="p-4 flex flex-col gap-16">
-        {jobs.length ? (
-          jobs.map((post) => <PostCard post={post} key={post.id} isJob />)
+        {apliJobs.length ? (
+          apliJobs.map((post) => <PostCard post={post} key={post.id} isJob />)
         ) : (
           <div className="py-4 flex justify-center items-center flex-col">
             <h6 className="text-center">Nenhuma vaga encontrada!</h6>
@@ -17,7 +17,7 @@ const AppliedJobs = () => {
           </div>
         )}
       </ul>
-      {Boolean(jobs.length) && (
+      {Boolean(apliJobs.length) && (
         <div className="flex flex-col my-8 w-full items-center">
           <h6>Parece que você chegou ao fim!</h6>
           <a href="#" className="w-max text-center hover:underline">

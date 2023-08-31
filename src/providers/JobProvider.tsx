@@ -1,16 +1,20 @@
 import { createContext, useState } from "react";
 import { toast } from "react-toastify";
-import { Post } from "../components/PostCard";
+import { JobsData, Post } from "../../data";
 
 interface iJobProviderProps {
   children: React.ReactNode;
 }
 interface iJobContextProps {
+  alreadyAplicated: (job: Post) => boolean;
   jobs: Post[];
   setJobs: React.Dispatch<React.SetStateAction<Post[]>>;
+  apliJobs: Post[];
+  setApliJobs: React.Dispatch<React.SetStateAction<Post[]>>;
   addJob: (job: Post) => void;
-  alreadyAplicated: (job: Post) => boolean;
   removeJob: (job: Post) => void;
+  addApliJob: (job: Post) => void;
+  removeApliJob: (job: Post) => void;
 }
 
 export const JobContext = createContext<iJobContextProps>(
@@ -18,15 +22,16 @@ export const JobContext = createContext<iJobContextProps>(
 );
 
 export const JobProvider = ({ children }: iJobProviderProps) => {
-  const [jobs, setJobs] = useState<Post[]>([]);
+  const [jobs, setJobs] = useState<Post[]>(JobsData);
+  const [apliJobs, setApliJobs] = useState<Post[]>([]);
 
   const alreadyAplicated = (job: Post) => {
-    return jobs.includes(job);
+    return apliJobs.includes(job);
   };
 
   const addJob = (newJob: Post) => {
     setJobs([...jobs, newJob]);
-    toast.success("Aplicação feita.");
+    toast.success("Trabalho adiconado.");
   };
 
   const removeJob = (job: Post) => {
@@ -34,12 +39,27 @@ export const JobProvider = ({ children }: iJobProviderProps) => {
     const indexJob = jobs.findIndex((value) => value.id === job.id);
     newJobs.splice(indexJob, 1);
     setJobs(newJobs);
+    toast.success("Trabalho removido.");
+  };
+
+  const addApliJob = (newJob: Post) => {
+    setApliJobs([...apliJobs, newJob]);
+    toast.success("Aplicação feita.");
+  };
+
+  const removeApliJob = (job: Post) => {
+    const newApliJobs = [...apliJobs];
+    const indexJob = apliJobs.findIndex((value) => value.id === job.id);
+    newApliJobs.splice(indexJob, 1);
+    setApliJobs(newApliJobs);
     toast.success("Aplicação desfeita.");
   };
 
+
+
   return (
     <JobContext.Provider
-      value={{ addJob, jobs, setJobs, alreadyAplicated, removeJob }}
+      value={{ addJob, jobs, setJobs, alreadyAplicated, removeJob, apliJobs, setApliJobs, addApliJob, removeApliJob }}
     >
       {children}
     </JobContext.Provider>

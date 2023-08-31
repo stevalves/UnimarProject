@@ -4,17 +4,10 @@ import { AiFillLike, AiOutlineLike } from "react-icons/ai";
 import { MdOutlineShare } from "react-icons/md";
 import { tv } from "tailwind-variants";
 import useJob from "../hooks/useJob";
-
-export interface Post {
-  id: string;
-  user: string;
-  title: string;
-  desc: string;
-  img?: string;
-}
+import { Post } from "../../data";
 
 const PostCard = ({ post, isJob = false }: { post: Post; isJob?: boolean }) => {
-  const { addJob, alreadyAplicated, removeJob } = useJob();
+  const { addApliJob, alreadyAplicated, removeApliJob } = useJob();
 
   const RandonLikeCount = () => {
     return Math.floor(Math.random() * (20 - 1 + 1) + 1);
@@ -92,14 +85,14 @@ const PostCard = ({ post, isJob = false }: { post: Post; isJob?: boolean }) => {
             {isJob &&
               (!alreadyAplicated(post) ? (
                 <button
-                  onClick={() => addJob(post)}
+                  onClick={() => addApliJob(post)}
                   className="border py-1 px-2 rounded"
                 >
                   Aplicar
                 </button>
               ) : (
                 <button
-                  onClick={() => removeJob(post)}
+                  onClick={() => removeApliJob(post)}
                   className="border py-1 px-2 rounded"
                 >
                   Desaplicar

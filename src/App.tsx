@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Router />
-      <ToastContainer theme="dark" position="bottom-right" />
+      <ToastContainer theme="dark" position="bottom-right" hideProgressBar autoClose={1000} closeButton={false} />
     </>
   );
 }
