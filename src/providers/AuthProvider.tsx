@@ -28,7 +28,6 @@ export const AuthProvider = ({ children }: iAuthProviderProps) => {
       navigate("/");
     } else {
       setUser(username);
-      navigate("/dashboard");
       toast.success("Logado com sucesso.");
     }
   };

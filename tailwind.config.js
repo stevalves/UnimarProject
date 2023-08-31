@@ -34,7 +34,8 @@ export default {
     },
     animation: {
       goDown: "goDown 2s ease-in-out infinite",
-      modalDown: "modalDown .5s ease-in-out"
+      modalDown: "modalDown .5s ease-in-out",
+      likeAction: "like 1s ease-in-out"
     },
     keyframes: {
       goDown: {
@@ -47,6 +48,12 @@ export default {
       modalDown: {
         "0%": { transform: "translateY(-12px)" },
         "100%": { transform: "translateY(0)" },
+      },
+      like: {
+        "0%": {transform: "translateY(0)"},
+        "30%": {transform: "translateY(4px)"},
+        "80%": {transform: "translateY(-8px)"},
+        "100%": {transform: "translateY(0)"}
       }
     },
   },

@@ -2,7 +2,7 @@ import { FiLink2 } from "react-icons/fi";
 
 const Aside = () => {
   return (
-    <aside className="h-max w-1/6 hidden xl:flex flex-col bg-forest-700 p-2 rounded-right sticky top-28 text-forest-50">
+    <aside className="h-max scale-100 w-1/6 hidden xl:flex flex-col bg-forest-700 p-2 rounded-right sticky top-28 text-forest-50">
       <h3 className="py-3">Últimas notícias:</h3>
       <ul className="flex flex-col gap-4">
         <li className="flex flex-col">

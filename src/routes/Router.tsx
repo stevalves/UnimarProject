@@ -7,9 +7,12 @@ import Layout from "./layouts/Layout";
 import UniTalkLayout from "./layouts/UniTalkLayout";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
-import Dashboard from "../pages/Dashboard";
 import RegisterUser from "../pages/Register/User";
 import RegisterCompany from "../pages/Register/Company";
+import DashboardLayout from "./layouts/DashboardLayout";
+import Home from "../pages/Dashboard/Home";
+import Jobs from "../pages/Dashboard/Jobs";
+import AppliedJobs from "../pages/Dashboard/AppliedJobs";
 
 function Router() {
   return (
@@ -25,7 +28,11 @@ function Router() {
         <Route path="register" element={<Register />} />
         <Route path="register/user" element={<RegisterUser />} />
         <Route path="register/company" element={<RegisterCompany />} />
-        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="dashboard" element={<DashboardLayout />}>
+          <Route path="" element={<Home />} />
+          <Route path="jobs" element={<Jobs />} />
+          <Route path="applied" element={<AppliedJobs />} />
+        </Route>
       </Route>
     </Routes>
   );

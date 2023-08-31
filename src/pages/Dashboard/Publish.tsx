@@ -12,6 +12,7 @@ const Publish = () => {
         </span>
         <h6>{user}</h6>
       </div>
+      <input type="text" placeholder="Insira um título" className="bg-forest-800 p-2 text-forest-50 resize-none placeholder:text-forest-50/75 w-full rounded" />
       <textarea
         name="post"
         id="publi"
@@ -22,11 +23,11 @@ const Publish = () => {
         <div className="flex gap-2">
           <button className="w-max border p-2 rounded flex items-center gap-2">
             <BsFillImageFill />
-            Imagem
+            <span className="hidden sm:inline">Imagem</span>
           </button>
           <button className="w-max border p-2 rounded flex items-center gap-2">
             <BsCameraVideo />
-            Vídeo
+            <span className="hidden sm:inline">Vídeo</span>
           </button>
         </div>
         <button className="w-max border p-2 rounded">Publicar</button>
