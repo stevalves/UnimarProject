@@ -15,16 +15,7 @@ const navValues: iNavValues[] = [
         <h4 className="flex mt-1 text-[1.5rem] tracking-wide">Home</h4>
       </>
     ),
-    href: "/",
-  },
-  {
-    id: "UniTalk",
-    value: (
-      <>
-        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">UniTalk</h4>
-      </>
-    ),
-    href: "/unitalk",
+    href: "/unimar",
   },
   {
     id: "EAD",
@@ -33,7 +24,7 @@ const navValues: iNavValues[] = [
         <h4 className="flex mt-1 text-[1.5rem] tracking-wide">EAD</h4>
       </>
     ),
-    href: "/ead",
+    href: "/unimar/ead",
   },
   {
     id: "Sobre",
@@ -42,7 +33,16 @@ const navValues: iNavValues[] = [
         <h4 className="flex mt-1 text-[1.5rem] tracking-wide">Sobre</h4>
       </>
     ),
-    href: "/me",
+    href: "/unimar/me",
+  },
+  {
+    id: "UniTalk",
+    value: (
+      <>
+        <h4 className="flex mt-1 text-[1.5rem] tracking-wide">UniTalk</h4>
+      </>
+    ),
+    href: "/",
   },
 ];
 

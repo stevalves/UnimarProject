@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { PiStudentFill } from "react-icons/pi";
 import { BiSolidFactory } from "react-icons/bi";
-import company from "../../../assets/company.jpg";
-import student from "../../../assets/student.webp";
+import company from "../../assets/company.jpg";
+import student from "../../assets/student.webp";
 
 const Register = () => {
   return (

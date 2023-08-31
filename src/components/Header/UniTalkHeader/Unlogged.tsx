@@ -14,26 +14,26 @@ const list_tv = tv({
 });
 
 interface iUnloggedProps {
-  open: boolean
+  open: boolean;
 }
 
 const Unlogged = ({ open }: iUnloggedProps) => {
   return (
     <ul className={list_tv({ open })}>
       <Link
-        to="/unitalk/register"
+        to="/register"
         className="border px-2 py-1 hover:bg-forest-50 hover:text-forest-900 duration-300 transition-colors sm:w-max w-1/3 text-center"
       >
         Registro
       </Link>
       <Link
-        to="/unitalk/login"
+        to="/login"
         className="border px-2 py-1 hover:bg-forest-50 hover:text-forest-900 duration-300 transition-colors sm:w-max w-1/3 text-center"
       >
         Login
       </Link>
     </ul>
-  )
-}
+  );
+};
 
-export default Unlogged
+export default Unlogged;

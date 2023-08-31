@@ -1,6 +1,5 @@
 import unitalk from "../../assets/unitalk-logo.png";
 import { Link } from "react-router-dom";
-import { MdKeyboardReturn } from "react-icons/md"
 
 const InitialUniTalk = () => {
   return (
@@ -26,8 +25,6 @@ const InitialUniTalk = () => {
         >
           Vamos lá
         </Link>
-        <Link data-aos="fade-left"
-          data-aos-delay="700" to="/" className="flex items-center gap-2 font-light hover:underline">Retornar <MdKeyboardReturn /></Link>
       </div>
       <img
         data-aos="flip-right"

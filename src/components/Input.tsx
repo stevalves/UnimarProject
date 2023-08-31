@@ -1,18 +1,33 @@
 import { tv } from "tailwind-variants";
-import { iInputProps } from "./props";
-import { forwardRef } from "react";
+import { InputHTMLAttributes, forwardRef } from "react";
+import { FieldError, Merge, FieldErrorsImpl } from "react-hook-form";
+
+export interface iInputProps extends InputHTMLAttributes<HTMLInputElement> {
+  label: string;
+  type: string;
+  id: string;
+  placeholder?: string;
+  pattern?: string;
+  value?: string;
+  defaultValue?: string;
+  errorMessage:
+    | string
+    | FieldError
+    | Merge<FieldError, FieldErrorsImpl>
+    | undefined;
+}
 
 const tv_input = tv({
   base: "py-2 px-3 placeholder:text-forest-600 border-2 border-forest-900 outline-none",
   variants: {
     error: {
-      true: "border-red-700 placeholder:text-red-700"
-    }
+      true: "border-red-700 placeholder:text-red-700",
+    },
   },
   defaultVariants: {
-    error: false
-  }
-})
+    error: false,
+  },
+});
 
 const Input = forwardRef<HTMLInputElement, iInputProps>(
   (
@@ -45,10 +60,12 @@ const Input = forwardRef<HTMLInputElement, iInputProps>(
           defaultValue={value}
           className={tv_input({ error: Boolean(errorMessage) })}
         />
-        {errorMessage && <p className="text-sm text-red-700">{String(errorMessage)}</p>}
+        {errorMessage && (
+          <p className="text-sm text-red-700">{String(errorMessage)}</p>
+        )}
       </fieldset>
     );
   }
 );
 
-export default Input
+export default Input;

@@ -1,14 +1,13 @@
 import { Carousel } from "react-responsive-carousel";
-import { coursesIn, coursesOut, iCourse } from "../../../data"
+import { coursesIn, coursesOut, iCourse } from "../../../data";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState } from "react";
-import CourseModal from "../../components/Modals/CourseModal";
+import CourseModal from "../../components/Modal/Modals/CourseModal";
 
 const CourseCard = ({ course }: { course: iCourse }) => {
+  const [seeModal, setSeeModal] = useState(false);
 
-  const [seeModal, setSeeModal] = useState(false)
-
-  const toggleModal = () => setSeeModal(!seeModal)
+  const toggleModal = () => setSeeModal(!seeModal);
 
   const { name, photo } = course;
 
@@ -16,12 +15,19 @@ const CourseCard = ({ course }: { course: iCourse }) => {
     <>
       <div className="bg-forest-600 relative">
         {/* To add spacing entering images add in image class px-[# quantity #] */}
-        <img loading="lazy" src={photo} alt={name + " cover image"} className="mx-auto h-[140px] md:h-[320px] object-cover bg-[center_center]" />
+        <img
+          loading="lazy"
+          src={photo}
+          alt={name + " cover image"}
+          className="mx-auto h-[140px] md:h-[320px] object-cover bg-[center_center]"
+        />
         <button
           onClick={toggleModal}
           className="absolute w-full top-0 bottom-0 bg-black/60 hover:bg-black/30 transition-colors duration-300 text-white flex items-center pt-4 flex-col"
         >
-          <h4 className="md:text-xl font-semibold px-2 md:py-1 text-forest-50">{name}</h4>
+          <h4 className="md:text-xl font-semibold px-2 md:py-1 text-forest-50">
+            {name}
+          </h4>
         </button>
       </div>
       {seeModal && <CourseModal course={course} toggleModal={toggleModal} />}
@@ -30,8 +36,7 @@ const CourseCard = ({ course }: { course: iCourse }) => {
 };
 
 const CoursesList = () => {
-
-  const [list, setList] = useState<iCourse[]>(coursesIn)
+  const [list, setList] = useState<iCourse[]>(coursesIn);
 
   return (
     <section className="bg-forest-600 p-8 flex flex-col justify-between">

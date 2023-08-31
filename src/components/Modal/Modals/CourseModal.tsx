@@ -1,5 +1,5 @@
-import { iCourse } from "../../../data";
-import { Modal } from "../Modal";
+import { iCourse } from "../../../../data";
+import { Modal } from "..";
 import { BiLinkExternal } from "react-icons/bi";
 
 const CourseModal = ({
@@ -21,7 +21,14 @@ const CourseModal = ({
           {course.type} - {course.certificate}
         </h3>
         <p className="leading-5">{course.desc}</p>
-        <a target="_blank" href={course.url} className="p-2 border border-forest-900 text-forest-900 bg-forest-200/80 transition-colors duration-300 hover:bg-forest-200 flex w-max gap-2 rounded mx-auto my-2 items-center">Saiba mais<BiLinkExternal /></a>
+        <a
+          target="_blank"
+          href={course.url}
+          className="p-2 border border-forest-900 text-forest-900 bg-forest-200/80 transition-colors duration-300 hover:bg-forest-200 flex w-max gap-2 rounded mx-auto my-2 items-center"
+        >
+          Saiba mais
+          <BiLinkExternal />
+        </a>
       </div>
     </Modal>
   );

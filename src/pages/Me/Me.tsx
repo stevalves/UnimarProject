@@ -12,7 +12,7 @@ const Me = () => {
       <div
         data-aos="fade-down"
         data-aos-delay="50"
-        className="w-full max-w-[600px] bg-forest-50 p-2 my-24 md:my-0 rounded shadow-2xl flex flex-col justify-between gap-4"
+        className="w-full max-w-[600px] bg-forest-50 p-2 my-24 rounded shadow-2xl flex flex-col justify-between gap-4"
       >
         <div className="h-[55px] w-full bg-forest-600 rounded-xl flex items-center px-4 text-forest-50 font-semibold text-xl">
           <h4>Detalhes</h4>

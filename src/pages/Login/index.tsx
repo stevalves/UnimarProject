@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { loginSchema, tLogin } from "./schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import Input from "../../../components/Input/Input";
-import Form from "../../../components/Form";
-import useAuth from "../../../hooks/useAuth";
+import Input from "../../components/Input";
+import Form from "../../components/Form";
+import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
   const { logIn } = useAuth();

@@ -10,7 +10,7 @@ interface iAuthContextProps {
   logOut: () => void;
   user: string;
   setUser: React.Dispatch<React.SetStateAction<string>>;
-  logIn: (name: string) => void
+  logIn: (name: string) => void;
 }
 
 export const AuthContext = createContext<iAuthContextProps>(
@@ -23,15 +23,12 @@ export const AuthProvider = ({ children }: iAuthProviderProps) => {
 
   const refresh = () => {
     const username = localStorage.getItem("@USERNAME");
-    console.log("arroto");
-    
 
     if (!username) {
-      navigate("/unitalk");
-      toast.info("Sessão expirada, faça o login novamente.");
+      navigate("/");
     } else {
       setUser(username);
-      navigate("/unitalk/dashboard");
+      navigate("/dashboard");
       toast.success("Logado com sucesso.");
     }
   };
@@ -39,20 +36,18 @@ export const AuthProvider = ({ children }: iAuthProviderProps) => {
   const logIn = (name: string) => {
     localStorage.setItem("@USERNAME", name);
     setUser(name);
-    navigate("/unitalk/dashboard");
+    navigate("/dashboard");
     toast.success("Sessão iniciada.");
-  }
+  };
 
   const logOut = () => {
     localStorage.removeItem("@USERNAME");
     setUser("");
-    navigate("/unitalk");
+    navigate("/");
     toast.success("Sessão encerrada.");
   };
 
-  useEffect(() => {
-    refresh();
-  }, []);
+  useEffect(() => refresh(), []);
 
   return (
     <AuthContext.Provider value={{ refresh, user, setUser, logOut, logIn }}>

@@ -1,5 +1,8 @@
-import { InitialUniTalk, HowHelp, Offer } from ".";
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import HowHelp from "./HowHelp";
+import InitialUniTalk from "./InitialUniTalk";
+import Offer from "./Offer";
 
 const UniTalk = () => {
   useEffect(() => {
@@ -12,9 +15,12 @@ const UniTalk = () => {
       <HowHelp />
       <Offer />
       <div className="w-full my-8 flex justify-center">
-        <a href="https://oficial.unimar.br/" className="w-max text-center rounded-xl py-2 px-4 border font-logo border-forest-50 text-forest-50">
+        <Link
+          to="/unimar"
+          className="w-max text-center rounded-xl py-2 px-4 border font-logo border-forest-50 text-forest-50"
+        >
           Saiba mais sobre a Unimar clicando aqui!
-        </a>
+        </Link>
       </div>
     </main>
   );

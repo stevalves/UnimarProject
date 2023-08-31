@@ -1,9 +1,9 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import Form from "../../../../components/Form";
+import Form from "../../../components/Form";
 import { registerCompanySchema, tRegisterCompany } from "./schemas";
-import Input from "../../../../components/Input/Input";
+import Input from "../../../components/Input";
 
 const RegisterCompany = () => {
   const {

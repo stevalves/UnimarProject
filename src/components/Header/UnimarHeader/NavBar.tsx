@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import Hamburguer from "./Hamburguer";
+import Hamburguer from "../../Hamburguer";
 import NavList from "./NavList";
 import { useLocation, Location } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const NavBar = () => {
 
   const location: Location = useLocation();
   useEffect(() => {
-    setOpen(false)
+    setOpen(false);
   }, [location]);
 
   return (
