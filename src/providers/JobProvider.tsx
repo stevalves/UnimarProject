@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 import { toast } from "react-toastify";
 import { JobsData, Post } from "../../data";
+import { DeepPartial } from "react-hook-form";
 
 interface iJobProviderProps {
   children: React.ReactNode;
@@ -30,7 +31,7 @@ export const JobProvider = ({ children }: iJobProviderProps) => {
   };
 
   const addJob = (newJob: Post) => {
-    setJobs([...jobs, newJob]);
+    setJobs([newJob, ...jobs]);
     toast.success("Trabalho adiconado.");
   };
 
@@ -42,8 +43,12 @@ export const JobProvider = ({ children }: iJobProviderProps) => {
     toast.success("Trabalho removido.");
   };
 
+  const editJob = (job: Post, editJob: DeepPartial<Post>) => {
+    
+  }
+
   const addApliJob = (newJob: Post) => {
-    setApliJobs([...apliJobs, newJob]);
+    setApliJobs([newJob, ...apliJobs]);
     toast.success("Aplicação feita.");
   };
 

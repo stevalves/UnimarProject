@@ -20,8 +20,8 @@ export const PostProvider = ({ children }: iPostProviderProps) => {
   const [posts, setPosts] = useState<Post[]>(PostsData);
 
   const addPost = (newPost: Post) => {
-    setPosts([...posts, newPost]);
-    toast.success("Aplicação feita.");
+    setPosts(posts => [newPost, ...posts])
+    toast.success("Post adicionado.");
   };
 
   const removePost = (post: Post) => {
@@ -29,7 +29,7 @@ export const PostProvider = ({ children }: iPostProviderProps) => {
     const indexJob = posts.findIndex((value) => value.id === post.id);
     newJobs.splice(indexJob, 1);
     setPosts(newJobs);
-    toast.success("Aplicação desfeita.");
+    toast.success("Post removido.");
   };
 
   return (
