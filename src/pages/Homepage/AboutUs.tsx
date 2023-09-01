@@ -3,9 +3,9 @@ import { BsBookFill, BsRocketTakeoffFill, BsEyeFill, BsStarFill } from "react-ic
 const AboutUs = () => {
   return (
     <section className="mt-8 w-full" id="aboutus">
-      <div className="container px-4 py-12 md:px-12 h-full text-forest-50 flex flex-col bg-forest-600 mx-auto rounded-bottom">
+      <div className="container py-12 md:px-12 h-full text-forest-50 flex flex-col bg-forest-600 mx-auto rounded-bottom">
         {/* Sobre/Dados/Adendos/UltimasAtualizaçoes */}
-        <div className="p-4">
+        <div className="p-2">
           <h6 className="text-4xl flex items-center gap-2"><BsBookFill />História</h6>
           <p className="text-lg mt-4 leading-6">
             A Universidade de Marília (Unimar) tem mais de 65 anos dedicados à formação de profissionais altamente qualificados para atuar no mercado de trabalho.<br />
@@ -14,7 +14,7 @@ const AboutUs = () => {
             Fundamentais na formação acadêmica, os docentes da UNIMAR são mestres e doutores em suas áreas e possuem carreira sólida no mercado. O contato diário entre acadêmico e professor irá potencializar as qualidades e habilidades do futuro profissional alavancando sua carreira.
           </p>
         </div>
-        <div className="mt-12 p-4 flex md:flex-row flex-col gap-8">
+        <div className="mt-12 p-2 flex md:flex-row flex-col gap-8">
           <div className="flex flex-col gap-6">
             <h6 className="text-3xl flex items-center gap-2"><BsRocketTakeoffFill />Missão</h6>
             <p className="text-lg mt-4 leading-6">

@@ -39,7 +39,7 @@ const CoursesList = () => {
   const [list, setList] = useState<iCourse[]>(coursesIn);
 
   return (
-    <section className="bg-forest-600 p-8 flex flex-col justify-between">
+    <section className="bg-forest-600 px-2 py-6 flex flex-col justify-between">
       <div className="h-full container mx-auto flex flex-col gap-4">
         <div className="pb-2 text-forest-50 flex justify-between">
           <h3 className="text-2xl">Nossos cursos</h3>
