@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import HowHelp from "./HowHelp";
 import InitialUniTalk from "./InitialUniTalk";
 import Offer from "./Offer";
+import { VscLink } from "react-icons/vsc";
 
 const UniTalk = () => {
   useEffect(() => {
@@ -17,9 +18,10 @@ const UniTalk = () => {
       <div className="w-full my-8 flex justify-center">
         <Link
           to="/unimar"
-          className="w-max text-center rounded-xl py-2 px-4 border font-logo border-forest-50 text-forest-50"
+          className="w-max text-center rounded-xl flex flex-col py-2 px-4 border font-logo items-center border-forest-50 text-forest-50"
         >
-          Saiba mais sobre a Unimar clicando aqui!
+          Universo Unimar!
+          <VscLink className="text-xl" /> 
         </Link>
       </div>
     </main>

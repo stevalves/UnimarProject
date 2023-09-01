@@ -48,7 +48,7 @@ const Nav = () => {
         </li>
         <li className="border-b border-forest-50">
           <Link
-            to="/dashboard"
+            to="/dashboard/messages"
             className="flex gap-2 items-center py-2 hover:text-forest-100"
           >
             <AiOutlineMail />{" "}

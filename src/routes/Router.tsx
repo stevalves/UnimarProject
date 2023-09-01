@@ -14,6 +14,8 @@ import Home from "../pages/Dashboard/Home";
 import Jobs from "../pages/Dashboard/Jobs";
 import AppliedJobs from "../pages/Dashboard/AppliedJobs";
 import Profile from "../pages/Dashboard/Profile";
+import Messages from "../pages/Dashboard/Messages";
+import Chat from "../pages/Dashboard/Chat";
 
 function Router() {
   return (
@@ -34,6 +36,8 @@ function Router() {
           <Route path="jobs" element={<Jobs />} />
           <Route path="applied" element={<AppliedJobs />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="messages" element={<Messages />} />
+          <Route path="messages/:name" element={<Chat />} />
         </Route>
       </Route>
     </Routes>
