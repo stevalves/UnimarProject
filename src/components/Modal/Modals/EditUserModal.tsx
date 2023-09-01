@@ -37,7 +37,7 @@ const EditUserModal = ({ title, toggleModal }: iEditUserModal) => {
         className="p-8 bg-forest-950 text-forest-50 flex flex-col gap-2"
         onSubmit={handleSubmit(submit)}
       >
-        <label htmlFor="userName">Insira seu novo nome:</label>
+        <label htmlFor="userName">Novo nome:</label>
         <input
           id="userName"
           type="text"

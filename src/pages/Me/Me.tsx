@@ -28,25 +28,6 @@ const Me = () => {
             O desafio proposto pela universidade envolveu a criação de uma
             aplicação que contribuísse de forma significativa com a instituição.
           </p>
-          <p>
-            Desenvolvi uma homepage com o objetivo de apresentar a universidade
-            de maneira simplificada, fornecendo informações rápidas e concisas
-            sobre os cursos e proporcionando uma visão geral da instituição.
-          </p>
-          <p>
-            A seção 'EAD' tem como propósito apresentar ao público leitor, por
-            meio de dados públicos, a ideia de que a modalidade de ensino a
-            distância da faculdade é uma alternativa extremamente vantajosa para
-            aqueles que não podem frequentar a instituição diariamente. Além
-            disso, essa seção visa enfatizar a habilidade de absorver o
-            conhecimento de forma eficiente no ambiente domiciliar.
-          </p>
-          <p>
-            Já a seção 'StartUp' funciona como uma rede social exclusiva da
-            universidade, com o objetivo de conectar empresas, microempresas e
-            startups estabelecidas dentro da instituição com alunos que buscam
-            oportunidades de trabalho e estágio.
-          </p>
         </div>
         <div className="text-forest-600">
           <h5 className="font-semibold text-xl text-center">Minhas redes:</h5>
