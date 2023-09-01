@@ -1,9 +1,10 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Form from "../../../components/Form";
 import { registerUserSchema, tRegisterUser } from "./schemas";
 import Input from "../../../components/Input";
+import { toast } from "react-toastify";
 
 const RegisterUser = () => {
   const {
@@ -14,9 +15,13 @@ const RegisterUser = () => {
     resolver: zodResolver(registerUserSchema),
   });
 
-  const signIn = (data: tRegisterUser) => {
-    // Função Registro
-    console.log(data);
+  const navigate = useNavigate();
+
+  const signIn = () => {
+    toast.success(
+      "Registro feito com sucesso!"
+    );
+    navigate("/login");
   };
 
   return (

@@ -17,7 +17,7 @@ const JobPublish = () => {
   const { user } = useAuth();
   const { addJob } = useJob()
 
-  const { register, handleSubmit } = useForm<tJob>({ resolver: zodResolver(schema) })
+  const { register, handleSubmit, resetField } = useForm<tJob>({ resolver: zodResolver(schema) })
 
   const submit = (data: tJob) => {
     const newPost = {
@@ -25,6 +25,8 @@ const JobPublish = () => {
       id: "post" + RandomNumber(1, 100) * RandomNumber(1, 100),
       user: user,
     }
+    resetField("desc")
+    resetField("title")
     addJob(newPost)
   }
 

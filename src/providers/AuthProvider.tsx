@@ -11,6 +11,8 @@ interface iAuthContextProps {
   user: string;
   setUser: React.Dispatch<React.SetStateAction<string>>;
   logIn: (name: string) => void;
+  editUser: (data: string) => void;
+  deleteUser: () => void;
 }
 
 export const AuthContext = createContext<iAuthContextProps>(
@@ -46,10 +48,25 @@ export const AuthProvider = ({ children }: iAuthProviderProps) => {
     toast.success("Sessão encerrada.");
   };
 
+  const editUser = (data: string) => {
+    localStorage.setItem("@USERNAME", data);
+    setUser(data);
+    toast.success("Usuário alterado.")
+  };
+
+  const deleteUser = () => {
+    localStorage.removeItem("@USERNAME");
+    setUser("");
+    navigate("/");
+    toast.success("Usuário deletado.");
+  };
+
   useEffect(() => refresh(), []);
 
   return (
-    <AuthContext.Provider value={{ refresh, user, setUser, logOut, logIn }}>
+    <AuthContext.Provider
+      value={{ refresh, editUser, deleteUser, user, setUser, logOut, logIn }}
+    >
       {children}
     </AuthContext.Provider>
   );

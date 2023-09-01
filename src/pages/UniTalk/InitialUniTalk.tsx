@@ -5,10 +5,14 @@ const InitialUniTalk = () => {
   return (
     <section className="container min-h-screen flex md:items-center md:justify-between p-2 mx-auto">
       <div className="md:w-1/2 md:h-full h-max md:my-0 my-auto text-forest-50 flex flex-col justify-between gap-8 overflow-hidden">
-        <h4 data-aos="fade-left" className="font-semibold text-3xl">
+        <h4
+          data-aos-once
+          data-aos="fade-left"
+          className="font-semibold text-3xl"
+        >
           Bem-vindo ao <span className="font-logo underline">UniTalk</span>
         </h4>
-        <p data-aos="fade-left" data-aos-delay="300">
+        <p data-aos-once data-aos="fade-left" data-aos-delay="300">
           No UniTalk, somos a plataforma de conexão definitiva na Unimar. Aqui,
           estudantes buscam oportunidades de estágio e emprego oferecidas pelas
           empresas parceiras e estabelecidas na universidade. Se você está em
@@ -18,6 +22,7 @@ const InitialUniTalk = () => {
           impulsione o seu futuro profissional!
         </p>
         <Link
+          data-aos-once
           to="register"
           data-aos="fade-left"
           data-aos-delay="600"

@@ -5,7 +5,10 @@ const usePostCard = () => {
   const [likeCount, setLikeCount] = useState<number>(RandomNumber(1, 20));
 
   const [openImgModal, setOpenImgModal] = useState<boolean>(false);
-  const toggleModal = () => setOpenImgModal((value) => !value);
+  const toggleImgModal = () => setOpenImgModal((value) => !value);
+
+  const [openEditModal, setOpenEditModal] = useState<boolean>(false);
+  const toggleEditModal = () => setOpenEditModal((value) => !value);
 
   const [liked, setLiked] = useState<boolean>(false);
 
@@ -22,7 +25,18 @@ const usePostCard = () => {
     setLiked(false);
   };
 
-  return { like, likeCount, liked, toggleModal, showDesc, toggleDesc, unLike, openImgModal }
-}
+  return {
+    openEditModal,
+    toggleEditModal,
+    like,
+    likeCount,
+    liked,
+    toggleImgModal,
+    showDesc,
+    toggleDesc,
+    unLike,
+    openImgModal,
+  };
+};
 
-export default usePostCard
+export default usePostCard;

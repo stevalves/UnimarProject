@@ -17,7 +17,7 @@ const PostPublish = () => {
   const { user } = useAuth();
   const { addPost } = usePost()
 
-  const { register, handleSubmit } = useForm<tPost>({ resolver: zodResolver(schema) })
+  const { register, handleSubmit, resetField } = useForm<tPost>({ resolver: zodResolver(schema) })
 
   const submit = (data: tPost) => {
     const newPost = {
@@ -25,6 +25,8 @@ const PostPublish = () => {
       id: "post"+RandomNumber(1,100)*RandomNumber(1,100),
       user: user,
     }
+    resetField("desc")
+    resetField("title")
     addPost(newPost)
   }
 

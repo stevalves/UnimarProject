@@ -1,4 +1,4 @@
-import { InitialEad, Characteristics, Challenges, EadBr, EadHere } from ".";
+import { InitialEad, Characteristics, Challenges, EadBr } from ".";
 import { useEffect } from "react";
 
 const Ead = () => {
@@ -12,7 +12,6 @@ const Ead = () => {
       <Characteristics />
       <Challenges />
       <EadBr />
-      <EadHere />
     </main>
   );
 };

@@ -6,7 +6,7 @@ const AppliedJobs = () => {
   const { apliJobs } = useJob();
 
   return (
-    <main className="rounded-top z-10 w-full min-h-screen xl:w-4/6 lg:px-32 bg-black p-2 text-forest-50">
+    <main className="rounded-top z-10 w-full xl:w-4/6 lg:px-32 bg-black p-2 text-forest-50">
       <ul className="p-4 flex flex-col gap-16">
         {apliJobs.length ? (
           apliJobs.map((post) => <PostCard post={post} key={post.id} isJob />)

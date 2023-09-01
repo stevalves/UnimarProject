@@ -16,6 +16,7 @@ interface iJobContextProps {
   removeJob: (job: Post) => void;
   addApliJob: (job: Post) => void;
   removeApliJob: (job: Post) => void;
+  editJob: (job: Post, data: DeepPartial<Post>) => void;
 }
 
 export const JobContext = createContext<iJobContextProps>(
@@ -43,9 +44,13 @@ export const JobProvider = ({ children }: iJobProviderProps) => {
     toast.success("Trabalho removido.");
   };
 
-  const editJob = (job: Post, editJob: DeepPartial<Post>) => {
-    
-  }
+  const editJob = (job: Post, data: DeepPartial<Post>) => {
+    const newJobs = [...jobs];
+    const jobIndex = jobs.findIndex((jobs) => jobs.id === job.id);
+    newJobs[jobIndex] = { ...newJobs[jobIndex], ...data };
+    setJobs(newJobs);
+    toast.success("Trabalho editado.");
+  };
 
   const addApliJob = (newJob: Post) => {
     setApliJobs([newJob, ...apliJobs]);
@@ -54,17 +59,26 @@ export const JobProvider = ({ children }: iJobProviderProps) => {
 
   const removeApliJob = (job: Post) => {
     const newApliJobs = [...apliJobs];
-    const indexJob = apliJobs.findIndex((value) => value.id === job.id);
-    newApliJobs.splice(indexJob, 1);
+    const indexApliJob = apliJobs.findIndex((value) => value.id === job.id);
+    newApliJobs.splice(indexApliJob, 1);
     setApliJobs(newApliJobs);
     toast.success("Aplicação desfeita.");
   };
 
-
-
   return (
     <JobContext.Provider
-      value={{ addJob, jobs, setJobs, alreadyAplicated, removeJob, apliJobs, setApliJobs, addApliJob, removeApliJob }}
+      value={{
+        addJob,
+        editJob,
+        jobs,
+        setJobs,
+        alreadyAplicated,
+        removeJob,
+        apliJobs,
+        setApliJobs,
+        addApliJob,
+        removeApliJob,
+      }}
     >
       {children}
     </JobContext.Provider>

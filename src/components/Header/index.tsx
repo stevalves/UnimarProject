@@ -3,7 +3,7 @@ import { ComponentProps, useEffect, useState } from "react";
 import MotionScroll from "../Scroll";
 
 const header = tv({
-  base: "bg-transparent fixed right-0 left-0 top-0 text-[2rem] text-gray-300 transition-[3s] flex items-center justify-center z-20",
+  base: "bg-transparent fixed right-0 left-0 top-0 text-[2rem] text-gray-300 transition-[3s] flex items-center justify-center z-30",
   variants: {
     see: {
       true: "py-2 shadow-xl bg-forest-950",

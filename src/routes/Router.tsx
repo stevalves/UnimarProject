@@ -13,6 +13,7 @@ import DashboardLayout from "./layouts/DashboardLayout";
 import Home from "../pages/Dashboard/Home";
 import Jobs from "../pages/Dashboard/Jobs";
 import AppliedJobs from "../pages/Dashboard/AppliedJobs";
+import Profile from "../pages/Dashboard/Profile";
 
 function Router() {
   return (
@@ -32,6 +33,7 @@ function Router() {
           <Route path="" element={<Home />} />
           <Route path="jobs" element={<Jobs />} />
           <Route path="applied" element={<AppliedJobs />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
       </Route>
     </Routes>

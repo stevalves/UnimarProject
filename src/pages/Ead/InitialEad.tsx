@@ -29,7 +29,7 @@ const InitialEad = () => {
               <a href="#chal" className="hover:underline text-forest-500">
                 benefícios e desafios
               </a>
-              . Abordarei também o <a href="#braz" className="hover:underline text-forest-500">cenário atual do EAD no Brasil</a> e como funciona o EAD na Unimar.
+              . E abordarei também o <a href="#braz" className="hover:underline text-forest-500">cenário atual do EAD no Brasil</a>.
             </p>
             <p>
               Apresento esses dados com o objetivo de validar a eficácia desse

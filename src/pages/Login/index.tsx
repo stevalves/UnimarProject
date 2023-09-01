@@ -50,7 +50,7 @@ const Login = () => {
           Entrar
         </button>
         <span>Ainda não tem conta?</span>
-        <Link to="/unitalk/register" className="underline">
+        <Link to="/register" className="underline">
           Cadastrar
         </Link>
       </Form>
