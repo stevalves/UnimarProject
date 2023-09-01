@@ -2,10 +2,10 @@ import { useParams } from "react-router-dom"
 import useAuth from "../../hooks/useAuth"
 import { useEffect, useRef } from "react"
 
-const MessageCard = ({ name, me = false }: { name: string, me?: boolean }) => {
+const MessageCard = ({ name, notMe = false }: { name: string, notMe?: boolean }) => {
   return (
-    <li className={!me ? "flex flex-col items-end" : ""}>
-      <div className={`flex gap-2 items-center mb-2 py-2 w-full ${!me ? 'flex-row-reverse' : ""}`}>
+    <li className={notMe ? "" : "flex flex-col items-end"}>
+      <div className={`flex gap-2 items-center mb-2 py-2 w-full ${notMe ? "" : 'flex-row-reverse'}`}>
         <span className="w-6 h-6 flex items-center justify-center text-3xl p-5 rounded-full border">
           {name.split("")[0]}
         </span>
@@ -37,18 +37,18 @@ const Chat = () => {
         <h6>{name}</h6>
       </div>
       <ul ref={chatbox} className="flex flex-col border-b border-forest-50 gap-8 max-h-[65vh] p-2 overflow-y-auto">
-        <MessageCard name={name} />
-        <MessageCard name={user} me />
-        <MessageCard name={name} />
-        <MessageCard name={user} me />
-        <MessageCard name={name} />
-        <MessageCard name={user} me />
-        <MessageCard name={name} />
-        <MessageCard name={user} me />
-        <MessageCard name={name} />
-        <MessageCard name={user} me />
         <MessageCard name={user} />
-        <MessageCard name={name} me />
+        <MessageCard name={name} notMe />
+        <MessageCard name={user} />
+        <MessageCard name={name} notMe />
+        <MessageCard name={user} />
+        <MessageCard name={name} notMe />
+        <MessageCard name={user} />
+        <MessageCard name={name} notMe />
+        <MessageCard name={user} />
+        <MessageCard name={name} notMe />
+        <MessageCard name={user} />
+        <MessageCard name={name} notMe />
         <MessageCard name={user} />
       </ul>
       <div className="my-8 flex items-end flex-col">
