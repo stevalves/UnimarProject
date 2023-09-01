@@ -70,7 +70,7 @@ const RegisterUser = () => {
           Cadastrar
         </button>
         <span>Já tem conta?</span>
-        <Link to="/unitalk/login" className="underline">
+        <Link to="/login" className="underline">
           Login
         </Link>
       </Form>
